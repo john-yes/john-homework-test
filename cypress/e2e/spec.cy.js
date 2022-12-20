@@ -1,8 +1,9 @@
 import Helper from "../pages/helper";
 let helper = new Helper()
 
-describe('Expedia', () => {
-
+describe('Expedia', {
+  "retries": 1
+}, () => {
   it('Test Case 1 / Test Case 2', () => {
 
     helper.visitBasePage()
@@ -32,7 +33,9 @@ describe('Expedia', () => {
   })
 })
 
-describe('Flights test', () => {
+describe('Flights test', {
+  "retries": 1
+},() => {
 
   it('Test Case 3/ Test Case 4 ', () => {
     helper.visitBasePage()
